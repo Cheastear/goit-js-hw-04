@@ -1,13 +1,10 @@
-function sum(first, second, ...args) {
-    let sum = first + second;
-    for (const key of args) {
-        sum += key;
-    }
-    return sum;
-}
-
 function isEnoughCapacity(products, containerSize) {
-    if (sum(...Object.values(products)) <= containerSize) {
+    let sum = 0;
+    let keys = Object.keys(products);
+    for (const key of keys) {   
+        sum += products[key];
+    }
+    if (sum <= containerSize) {
         return true;
     }
     return false;
