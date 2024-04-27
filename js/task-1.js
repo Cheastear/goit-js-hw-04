@@ -13,7 +13,7 @@ function isEnoughCapacity(products, containerSize) {
 console.log("task-1");
 
 console.log(
-  isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 7)
+  isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
 ); // true
 
 console.log(
